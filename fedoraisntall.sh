@@ -9,9 +9,6 @@
 # URLs
 
 
-
-# Funções
-
 ## Funções
 
 dnf_update(){
@@ -24,7 +21,6 @@ install_flatpaks(){
     flatpak install com.bitwarden.desktop -y
     flatpak install io.ente.auth -y
     flatpak install md.obsidian.Obsidian -y
-    flatpak install com.rtosta.zapzap -y
     flatpak install org.nickvision.tubeconverter -y
 }
 
@@ -33,6 +29,7 @@ install_rpm(){
 
     sudo dnf install gcc gcc-c++ -y
     sudo dnf install steam -y
+    sudo dnf install gnome-tweaks -y
 }
 
 extra_config(){
